@@ -1,0 +1,20 @@
+# macOS Finder metadata file — auto-created in every folder you open; ignored because it's noise that clutters diffs and leaks your local filesystem habits to collaborators
+.DS_Store
+
+# Vim swap file — created while editing; ignored because it's a temporary lock file that causes merge conflicts and has no value to anyone else
+*.swp
+
+# Vim secondary swap file — same purpose as .swp in a different state; ignored for the same reason, plus it can leak partial edits if committed by accident
+*.swo
+
+# VS Code workspace settings folder — stores your personal editor preferences; ignored because these are user-specific and forcing them on collaborators breaks their setup
+.vscode/
+
+# JetBrains IDE settings folder (IntelliJ, WebStorm, PyCharm, GoLand); ignored for the same reason as .vscode — personal config that shouldn't be imposed on anyone else
+.idea/
+
+# Node.js dependency folder — can be hundreds of megabytes and thousands of files; ignored because it's fully regenerable from package.json via `npm install`, so committing it bloats the repo and slows clones
+node_modules/
+
+# Any log file from any tool or build process; ignored because logs are machine-specific, often contain timestamps/paths/secrets, and are never useful as tracked artifacts
+*.log
